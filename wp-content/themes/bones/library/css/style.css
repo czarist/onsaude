@@ -357,7 +357,8 @@ li,
 ul,
 td,
 table,
-tr {
+tr,
+label {
     font-family: 'Poppins-Regular' !important;
 }
 
