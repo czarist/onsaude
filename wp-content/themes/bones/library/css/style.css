@@ -387,6 +387,10 @@ a.queromais {
     transition: 0.5s;
 }
 
+div#inner-header a {
+    font-size: 14px;
+}
+
 a.queromais:hover {
     transition: 0.5s;
     padding: 10px;
@@ -448,6 +452,10 @@ div#bigBee {
     opacity: 0.5;
 }
 
+section#QUEM-SOMOS .servico-box {
+    min-height: 598px;
+}
+
 .content-icone-item {
     display: flex;
     justify-content: center;
@@ -457,8 +465,6 @@ div#bigBee {
     min-width: 55px !important;
     min-height: 55px !important;
     border-radius: 100%;
-    margin-right: 15px;
-    padding-top: 6px;
 }
 
 .content-icone-item img {
@@ -1469,6 +1475,10 @@ nav#menu-mobile a {
     min-height: 400px;
     border-radius: 50px;
     background-color: white;
+}
+
+.servico-box img {
+    max-width: 105px !important;
 }
 
 body {

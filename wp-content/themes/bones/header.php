@@ -66,7 +66,7 @@
 					<a href="#container" rel="nofollow">
 						<img id="imgLogo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg" alt="logo">
 					</a>
-				</p>
+				</p> 
 				<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 					<ul class="d-lg-flex d-none justify-content-between align-items-center m-0">
 						<li class="mr-5 d-none d-xl-block">
@@ -83,6 +83,9 @@
 						</li>
 						<li class="mr-5 d-none d-xl-block">
 							<a class="mb-0" href="#SAIBAMAIS">SAIBA MAIS</a>
+						</li>
+						<li class="mr-5 d-none d-xl-block">
+							<a class="mb-0" href="#QUEM-SOMOS">QUEM SOMOS</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
 							<a class="mb-0" href="#">LOGIN</a>
@@ -106,6 +109,9 @@
 					</li>
 					<li class="mb-3 d-flex">
 						<a class="text-left" href="#SAIBAMAIS">SAIBA MAIS</a>
+					</li>
+					<li class="mb-3 d-flex">
+						<a class="text-left" href="#QUEM-SOMOS">QUEM SOMOS</a>
 					</li>
 					<li class="mb-3 d-flex">
 						<a class="text-left" href="#">LOGIN</a>

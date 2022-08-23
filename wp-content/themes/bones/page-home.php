@@ -29,7 +29,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 							<section id="SERVICOS" class="section position-relative">
 								<div id="bigBee" class="d-none d-xl-flex" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/images/logo2.svg');"></div>
 								<div class="container">
-									<div class="row justify-content-center align-items-center mt-5">
+									<div class="row justify-content-start align-items-center mt-5">
 										<div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 mt-5 mb-5">
 											<?= get_field('texto_servicos', 5) ?>
 										</div>
@@ -68,8 +68,8 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 								<div class="mt-5 mb-5"></div>
 								<div id="TELEMEDICINA" class="row mw-100 ml-0 mr-0 mt-5 items-container" style="background-image: url('<?php echo get_template_directory_uri() ?>/library/images/fundodegrade.svg');">
 									<div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
-										<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="row justify-content-center">
-											<div class="col-12 col-xl-6 text-white ">
+										<div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="row justify-content-start">
+											<div class="col-12 text-white ">
 												<?= get_field('texto_itens', 5) ?>
 												<?php
 												if (have_rows('itens', 5)) :
@@ -82,7 +82,7 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 															<div class="content-icone-item">
 																<img src="<?= $icone_item ?>" alt="<?= $item ?>">
 															</div>
-															<p class="text-dark">
+															<p class="text-dark m-0 d-flex justify-content-center align-items-center">
 																<span><?= $item ?></span>
 															</p>
 														</div>
@@ -98,6 +98,31 @@ $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
 									<div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-6 bg-geral position-relative" style="background-image: url('<?= get_field('imagem_secao', 5) ?>'); min-height: 180px;"></div>
 								</div>
 							</section>
+
+							<section id="QUEM-SOMOS" class="mt-5 mb-5">
+								<div class="container">
+									<div class="row justify-content-start align-items-center mt-5">
+										<div data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 mt-5 mb-5">
+											<?= get_field('texto_quem_somos', 5) ?>
+										</div>
+										<?php
+										if (have_rows('pilares', 5)) :
+											while (have_rows('pilares', 5)) : the_row();
+												$pilar = get_sub_field('pilar', 5);
+										?>
+												<div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-xl-4 text-center mt-5 d-flex justify-content-center align-items-center">
+													<div class="servico-box">
+														<?= $pilar ?>
+													</div>
+												</div>
+										<?php
+											endwhile;
+										endif;
+										?>
+									</div>
+								</div>
+							</section>
+
 							<section id="DEPOIMENTOS">
 								<div class="container">
 									<div class="row">
